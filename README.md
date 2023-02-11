@@ -1,2 +1,2 @@
-# alzhymer-s-prediction
-Classification of Alzhymers disease based on thickness of cerebral cortex
+# alzhymer's-prediction
+The aim of this project is to apply machine learning tools to discriminate patients with Alzheimer's Disease (AD) from healthy elderly (C) by analyzing thickness measurements of their cerebral cortex. Specifically, the dataset consists of cerebral cortex thickness measurements at 360 brain regions of interest and associated labels indicating whether the subject has Alzheimer's Disease or is a Control subject (i.e., a healthy elderly).

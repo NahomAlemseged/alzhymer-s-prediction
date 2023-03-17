@@ -2,6 +2,6 @@ Alzhymer’s disease can be predicted with a good accuracy by examining thicknes
 
 Due to the redundant information and high dimensionality of the data, models, even simpler ones tend to overfit, thereby necessitate regularization and dimensionality reduction. I used simple models of Elastic net, Logistic regression, Linear discriminant analysis (LDA), and Support Vector Machines (SVM), as well as ensembled tree based models including XGBoost and Random Forest models in this study to make comparison of best performing models. I also used pca and autoencoders as dimensionality reduction techniques, which then are fit within the models for all models except elastic net.
 
-PCA and variational autoencoders have shown very similar information (variance) preservationand similar scores indicating close to linear relationship among features.
+PCA and variational autoencoders have shown very similar information (variance) preservationand similar scores indicating close to linear relationship among features.Hyperparameter tuning is implemented using grid-search-cv to select the best hyperparameters for model selection as well as dimensionality reduction.
 
 Elastic-net model has shown one of the best performances. Similarly simpler models logistic regression, LDA, SVM showed the best performance, while RF and XGBoost tend to generalize less with high risk of overfitting. Finally, LDA and logistic regression tend to have a high AUC score indicating a balanced accuracy of prediction for both classes, in addition to best overall accuracy.

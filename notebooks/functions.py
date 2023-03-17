@@ -53,7 +53,7 @@ class dim_red:
         early_stopping_cb = tf.callbacks.EarlyStopping(patience=3,restore_best_weights=True)
         stacked_ae.compile(optimizer = tf.optimizers.Adam(learning_rate = lr), loss = tf.losses.mean_squared_error, metrics='accuracy')
         # history = stacked_ae.fit(x_train, x_train, epochs=epoch, validation_data=[X_test, X_test],callbacks=[checkpoint_cb, early_stopping_cb])
-        history = stacked_ae.fit(x_train, x_train, epochs=epoch, validation_data=[x_valid, x_valid], verbose = 1)
+        history = stacked_ae.fit(x_train, x_train, epochs=epoch, validation_data=[x_valid, x_valid], verbose = 0)
         train_encoded = encoder.predict(x_train)
         full_encoded = stacked_ae.predict(x_train)
         test_encoded = encoder.predict(x_valid)

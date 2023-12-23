@@ -47,3 +47,4 @@ wincertstore                  0.2
 wrapt                         1.12.1
 xgboost                       1.7.3
 zipp                          3.13.0
+mlflow                        2.9.2
